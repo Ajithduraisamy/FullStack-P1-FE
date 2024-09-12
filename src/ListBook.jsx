@@ -12,7 +12,7 @@ function ListBook() {
 
     const getApidata = async () => {
         try {
-            const res = await axios.get("http://localhost:3006/books")
+            const res = await axios.get("https://fullstack-p1-be.onrender.com/books")
             setApidata(res.data)
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -21,7 +21,7 @@ function ListBook() {
 
     const deletedata = async (bookId) => {
         try {
-            await axios.delete(`http://localhost:3006/books/${bookId}`)
+            await axios.delete(`https://fullstack-p1-be.onrender.com/books/${bookId}`)
             getApidata();
         } catch (error) {
             console.error("Error fetching data:", error);

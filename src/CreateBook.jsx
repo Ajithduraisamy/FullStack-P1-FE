@@ -31,7 +31,7 @@ function CreateBook() {
             return error;
         },
         onSubmit: async (values, actions) => {
-            await axios.post("http://localhost:3006/books", values)
+            await axios.post("https://fullstack-p1-be.onrender.com/books", values)
             navigate("/portal/listbook")
             actions.resetForm();
         }

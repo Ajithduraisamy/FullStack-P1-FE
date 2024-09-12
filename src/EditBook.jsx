@@ -18,7 +18,7 @@ function EditBook() {
         const fetchbookdata = async () => {
             try {
                 console.log('Fetching book data for ID:', bookId);  // Debugging line
-                const res = await axios.get(`http://localhost:3006/books/${bookId}`);
+                const res = await axios.get(`https://fullstack-p1-be.onrender.com/books/${bookId}`);
                 console.log('Fetched Data:', res.data);  // Debugging line
                 setInitialvalue({
                     title: res.data.title || "",
@@ -58,7 +58,7 @@ function EditBook() {
         },
         onSubmit: async (values, actions) => {
             try {
-                await axios.put(`http://localhost:3006/books/${bookId}`, values);
+                await axios.put(`https://fullstack-p1-be.onrender.com/books/${bookId}`, values);
                 navigate("/portal/listbook");
                 actions.resetForm();
             } catch (error) {
