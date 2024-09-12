@@ -11,12 +11,11 @@ This is the frontend of a Full Stack MERN (MongoDB, Express, React, Node.js) app
   6. Responsive UI with Bootstrap
 
 **Technologies Used**
-
-  **React.js:** JavaScript library for building user interfaces
-  **React Router:** For handling navigation between pages
-  **Axios:** For making API requests to the backend
-  **Bootstrap:** For styling the application and ensuring responsiveness
-  **React Hooks:** For managing state and lifecycle methods
+  1. **React.js:** JavaScript library for building user interfaces
+  2. **React Router:** For handling navigation between pages
+  3. **Axios:** For making API requests to the backend
+  4. **Bootstrap:** For styling the application and ensuring responsiveness
+  5. **React Hooks:** For managing state and lifecycle methods
 
 **book-library-frontend/**
 │
